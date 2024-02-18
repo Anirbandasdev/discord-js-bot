@@ -59,9 +59,9 @@ module.exports = {
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
       {
-        host: "localhost",
-        port: 2333,
-        password: "youshallnotpass",
+        host: "localnet-id.ajiehost.rf.gd",
+        port: 540,
+        password: "https://dsc.gg/ajidevserver",
         id: "Local Node",
         secure: false,
       },
@@ -78,10 +78,28 @@ module.exports = {
   IMAGE: {
     ENABLED: false,
     BASE_API: "https://strangeapi.fun/api",
+  },
 
+  MODERATION: {
+    ENABLED: true,
+    EMBED_COLORS: {
+      TIMEOUT: "#102027",
+      UNTIMEOUT: "#4B636E",
+      KICK: "#FF7961",
+      SOFTBAN: "#AF4448",
+      BAN: "#D32F2F",
+      UNBAN: "#00C853",
+      VMUTE: "#102027",
+      VUNMUTE: "#4B636E",
+      DEAFEN: "#102027",
+      UNDEAFEN: "#4B636E",
+      DISCONNECT: "RANDOM",
+      MOVE: "RANDOM",
+    },
+  },
 
   INVITE: {
-    ENABLED: true,
+    ENABLED: false,
     EMBED_COLORS: {
       TIMEOUT: "#102027",
       UNTIMEOUT: "#4B636E",
@@ -128,4 +146,4 @@ module.exports = {
     CLOSE_EMBED: "#068ADD",
   },
 }
-}
+
