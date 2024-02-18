@@ -59,9 +59,9 @@ module.exports = {
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
       {
-        host: "lavalink.micium-hosting.com",
-        port: 40,
-        password: "micium-hosting.com",
+        host: "localnet-id.ajiehost.rf.gd",
+        port: 540,
+        password: "https://dsc.gg/ajidevserver",
         id: "Local Node",
         secure: false,
       },
