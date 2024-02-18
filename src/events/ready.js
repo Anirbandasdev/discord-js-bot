@@ -1,12 +1,18 @@
-const { counterHandler, inviteHandler, presenceHandler } = require("@src/handlers");
+const { counterHandler, inviteHandler, presenceHandler,  } = require("@src/handlers");
 const { cacheReactionRoles } = require("@schemas/ReactionRoles");
 const { getSettings } = require("@schemas/Guild");
+const { ActivityType } = require("discord.js");
 
 /**
  * @param {import('@src/structures').BotClient} client
  */
 module.exports = async (client) => {
   client.logger.success(`Logged in as ${client.user.tag}! (${client.user.id})`);
+  // 
+  client.user.setActivity({
+    name: `Made By AnirbanGamingYT 💖`,
+    type: ActivityType.Watching,
+  });
 
   // Initialize Music Manager
   if (client.config.MUSIC.ENABLED) {
