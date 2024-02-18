@@ -37,8 +37,8 @@ module.exports = {
 
   DASHBOARD: {
     enabled: true, // enable or disable dashboard
-    baseURL: "https://alexa-2-0.onrender.com", // base url
-    failureURL: "https://alexa-2-0.onrender.com", // failure redirect url
+    baseURL: process.env.URL || "http://localhost:8080", // base url
+    failureURL: process.env.URL || "http://localhost:8080", // failure redirect url
     port: "8080", // port to run the bot on
   },
 
