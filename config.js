@@ -77,14 +77,10 @@ module.exports = {
 
   IMAGE: {
     ENABLED: false,
-    BASE_API: "https://strangeapi.hostz.me/api",
-  },
+    BASE_API: "https://strangeapi.fun/api",
+
 
   INVITE: {
-    ENABLED: false,
-  },
-
-  MODERATION: {
     ENABLED: false,
     EMBED_COLORS: {
       TIMEOUT: "#102027",
@@ -131,4 +127,5 @@ module.exports = {
     CREATE_EMBED: "#068ADD",
     CLOSE_EMBED: "#068ADD",
   },
-};
+}
+}
