@@ -22,6 +22,10 @@ client.loadEvents("src/events");
 // find unhandled promise rejections
 process.on("unhandledRejection", (err) => client.logger.error(`Unhandled exception`, err));
 
+setInterval(function() {
+  return console.log("I am Online");
+},40000 );
+
 (async () => {
   // check for updates
   await checkForUpdates();
