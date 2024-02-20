@@ -62,7 +62,8 @@ module.exports = {
         host: "lavalink.jirayu.pw",
         port: 2333,
         password: "youshallnotpass",
-        secure: false
+        secure: false,
+        id: "anirban node"
       },
     ],
   },
